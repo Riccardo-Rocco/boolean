@@ -1,0 +1,141 @@
+
+
+body {
+    margin: 0; /* Rimuove i margini predefiniti */
+    height: 100vh; /* Imposta l'altezza del corpo uguale all'altezza della viewport */
+    display: flex; /* Abilita flexbox */
+    justify-content: center; /* Centra i contenuti orizzontalmente */
+    align-items: center; /* Centra i contenuti verticalmente */
+    background-image: url('background.jpg'); /* Sostituisci 'path/to/your/image.jpg' con il percorso effettivo della tua immagine */
+    background-size: cover;   /* Questo fa sì che l'immagine copra l'intera viewport */
+    background-repeat: no-repeat; /* Previene la ripetizione dell'immagine */
+    background-position: top center; /* Centra l'immagine sia verticalmente che orizzontalmente */
+  
+}
+
+
+.LOGO{
+    width: 180px;
+    margin-top: 10px;
+    
+}
+
+.quadrato_trasparente{
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    display: inline-block; 
+    padding: 10px;   
+    width: 800px; 
+    height: 520px; 
+    line-height: 10px; 
+    text-align: center; 
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: 30px;
+
+}
+
+.quadrato_trasparente main {
+    padding-left: 60px; /* Questo distacca il contenuto del <main> di 20px dal bordo sinistro del quadrato */
+}
+
+
+.titolo{
+    color: rgb(42, 240, 42);
+}
+
+
+.esterno{
+    width: 50%;
+    margin: auto;
+}
+
+.divisore {
+    height: 46px; 
+    background-color: rgb(42, 240, 42); 
+    position: relative; 
+    margin: 10px 60px; 
+    
+}
+
+
+button {
+    
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+button:nth-child(1) {
+    left: 28%; 
+}
+
+button:nth-child(2) {
+    left: 50%; 
+    transform: translateX(-50%) translateY(-50%); 
+}
+
+button:nth-child(3) {
+    right: 24%; 
+}
+
+main h3, 
+main h5,
+main hr {
+    text-align: left;  
+    margin-left: 2px;
+    margin: 5px 0;  
+}
+
+main div {
+    margin-bottom: 20px;
+}
+
+
+main h3::before {
+    content: ""; 
+    display: inline-block;
+    width: 10px; /* Larghezza del quadratino */
+    height: 10px; /* Altezza del quadratino */
+    background-color: white;
+    margin-right: 5px; /* Spazio tra il quadratino e l'h3 */
+    vertical-align: middle; /* Allinea verticalmente il quadratino con l'h3 */
+}
+main h5:first-of-type::before {
+    content: "→"; 
+    display: inline-block;
+    margin-right: 5px; 
+}
+
+
+.carica1 {
+    border: none;          /* Rimuove il bordo predefinito dell'hr */
+    height: 30px;           /* Definisce lo spessore dell'hr */
+    width: 40%;            /* Definisce la larghezza dell'hr come l'80% del suo container */
+    background-color: #FFFF99; /* Colore giallo chiaro */
+    border-radius: 10px;
+}
+
+
+.carica2 {
+    border: none;          /* Rimuove il bordo predefinito dell'hr */
+    height: 30px;           /* Definisce lo spessore dell'hr */
+    width: 60%;            /* Definisce la larghezza dell'hr come l'80% del suo container */
+    background-color: rgb(42, 240, 42); /* Colore giallo chiaro */
+    border-radius: 10px;
+}
+
+
+
+.carica3 {
+    border: none;          /* Rimuove il bordo predefinito dell'hr */
+    height: 30px;           /* Definisce lo spessore dell'hr */
+    width: 25%;            /* Definisce la larghezza dell'hr come l'80% del suo container */
+    background-color: #b84e6a; /* Colore giallo chiaro */
+    border-radius: 10px;
+}
